@@ -7,7 +7,7 @@ public class BrayanMovement : MonoBehaviour
     public float JumpForce;
     public float velocityRun;
 
-    //Rigi de john
+    //Rigi de personaje
     private Rigidbody2D Rigidbody2D;
     private float Vertical;
 
@@ -27,13 +27,13 @@ public class BrayanMovement : MonoBehaviour
     {
         //si oprime horizontal
         Vertical = Input.GetAxisRaw("Vertical");
-
-        //pinta una linea roja desde john hasta el piso
+        //pinta una linea roja desde el personaje hasta el piso
         Debug.DrawRay(transform.position, Vector3.down * 0.3f, Color.red);
         //valida la posicion si salta desde el suelo o desde el aire
         if (Physics2D.Raycast(transform.position, Vector3.down, 0.3f))
             Grounded = true;
         else Grounded = false;
+        //velocidad a la que aumenta a corredor
         if(Animator.speed < 3.9f)
             Animator.speed = Animator.speed + velocityRun;
 
@@ -44,7 +44,6 @@ public class BrayanMovement : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && Grounded)
         {
             Jump();
-            
         }
     }
 

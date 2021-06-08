@@ -126,7 +126,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 24
+        width: 26
         height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -166,9 +166,9 @@ TextureImporter:
       name: Enemy_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 63
         y: 0
-        width: 24
+        width: 26
         height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -187,9 +187,9 @@ TextureImporter:
       name: Enemy_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 95
         y: 0
-        width: 24
+        width: 26
         height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -208,9 +208,9 @@ TextureImporter:
       name: Enemy_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 127
         y: 2
-        width: 24
+        width: 26
         height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -229,9 +229,9 @@ TextureImporter:
       name: Enemy_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 158
         y: 0
-        width: 24
+        width: 26
         height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -249,7 +249,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a8f413a580b64c544baf5ec945832260
     internalID: 0
     vertices: []
     indices: 
