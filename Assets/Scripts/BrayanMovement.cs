@@ -15,11 +15,14 @@ public class BrayanMovement : MonoBehaviour
     private bool Grounded;
     private Animator Animator;
 
+    public GameObject generadorEnemigo;
+
     // Use this for initialization
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
+        generadorEnemigo.SendMessage("comenzarGenerador");
     }
 
     // Update is called once per frame
@@ -51,5 +54,13 @@ public class BrayanMovement : MonoBehaviour
     {
         //Funcion de salto
         Rigidbody2D.AddForce(Vector2.up * JumpForce);
+    }
+
+    public void Hit()
+    {
+        //funcion de vida
+        Animator.SetBool("Dead", true);
+        Rigidbody2D.AddForce(Vector2.up * JumpForce);
+        //Destroy(gameObject);
     }
 }
